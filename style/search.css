@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700,700i,900&display=swap');
+
+:root {
+    --background: whitesmoke;
+    --foreground:  white;
+    --text: #2e2c2c;
+    --hl_text: black;
+    --shadow: rgba(0,0,0,.4);
+    --font: 'Nunito Sans', sans-serif;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    margin: 0;
+    overflow-y: scroll;
+}
+
+body, input, textarea, button {
+    font-family: var(--font);
+}
+
+main { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 25%;
+    padding: 0;
+    
+    width: 50%;
+}
+
+iframe {
+    border: 0;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding: 30px 10%;
+    height: 90px;
+
+    background-color: white;
+    box-shadow: 0 0 8px var(--shadow);
+}
+
+nav{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 986px;
+    height: 70px;
+}
+
+nav .l_nav {
+    padding-right: 20px;
+}
+
+nav .r_nav {
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 20px;
+}
+
+nav .r_nav a {
+    background:  #191551;
+
+    font-weight: 700;
+    color: white;
+
+    border-radius: 100px;
+    border: 1px solid whitesmoke;
+    line-height: 50px;
+    padding: 9px 15px;
+    transition: background 0.2s ease;
+    text-shadow: none;
+}
+
+nav .r_nav a:hover {
+    background: rgba(0, 0, 53, .8);
+    color: var(--foreground);
+}
+
+nav h1 {
+    display: inline-block;
+    
+    padding: 0 20px;
+    margin: 0;
+    line-height: 70px;
+
+    color: #620273;
+    font-size: 23px;
+    font-weight: 900;
+
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, .2);
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text);
+
+    line-height: 30px;
+    padding: 0 10px;
+    
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, .2);
+}
+
+nav a:hover {
+    color: black;
+}
+
+#s_nav {
+    display: none;
+
+    height: 70px;
+    width: 70px;
+
+    background-size: 24px 24px;
+}
+
+
+
+*{    
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+label #under_section .item_list{  
+    display: flex;
+}
+
+
+#getting_username{
+    visibility: hidden;
+}
+
+.hiding_following{
+    visibility: hidden;
+}
+
+.following_list{    
+    background-color: whitesmoke;
+
+    padding: 4px 15px;
+    border:none;
+    border-radius:50px;
+
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+
+    font-weight:500;
+    font-size:16px;
+    color: #edf0f1;
+    text-decoration:none;
+}
+
+#myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;  
+}
+
+  
+#myUL li a {
+    display: block
+
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    padding: 12px;
+
+    background-color: #f6f6f6;
+    
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+  
+.name_list{
+ margin-bottom: -45%;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+}
+
+#myInput {
+   
+    width: 100%;
+    font-size: 16px;
+
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+
+    box-shadow: 0 0 8px var(--shadow);
+  }
+
+#button{
+    padding: 9px 25px;
+    background-color: #191551;
+    border:none;
+    border-radius:50px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+
+    font-weight:500;
+    font-size:16px;
+    color: #edf0f1;
+    text-decoration:none;
+}
+
+#button:hover{
+    background: rgba(0, 0, 53, .6);
+}
+
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius:50px;
+    cursor: pointer;
+    transition: all 0,3s ease 0s;
+}
+
+.errore {
+    font-weight: bold;
+    scolor: red;
+}
